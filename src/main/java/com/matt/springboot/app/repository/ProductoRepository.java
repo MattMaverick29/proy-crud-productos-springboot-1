@@ -12,4 +12,6 @@ public interface ProductoRepository extends MongoRepository<Producto, Serializab
 	//En este bloque hago todas las consultas que necesite hacer a Mongo
 	
 	Producto findById(String id);
+	
+	Producto deleteById(String id);
 }
