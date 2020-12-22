@@ -22,13 +22,9 @@ public class ProductoServiceImpl implements IProductoService {
 		Producto producto = null;
 		
 		try {
-			
 			producto = productoRepository.findById(idProducto);
-			
 		} catch (Exception e) {
-			
 			e.printStackTrace();
-			
 		}
 		
 		return producto;
@@ -40,9 +36,7 @@ public class ProductoServiceImpl implements IProductoService {
 		Producto producto = null;
 		
 		try {
-			
 			producto = productoRepository.save(entity);
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
